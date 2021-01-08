@@ -1,0 +1,145 @@
+.body{
+    margin:0;
+    box-sizing: border-box;
+    font-size:16px;
+}
+.header{
+    background-image: linear-gradient(to top, #909dc1, #474a68);
+    padding:1rem;
+    margin:0;
+    color:white;
+    font-size: 20px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    top:0;
+    left:0;
+}
+#form{
+  width:31.25rem; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  /* height:px; */
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+    padding:2rem;
+   /* background-color:#474a68; */
+   background-image: linear-gradient(to top, white, grey);
+   position: absolute;
+   top: 50%; 
+    left: 50%; 
+   transform:translate(-50%,-50%);
+   margin:2rem;
+
+}
+#name{
+    width:15rem;
+    height: 1.25rem;
+    /* font-size: 11px; */
+    border-style: solid;
+    padding-left:5px;
+    border-color: black;
+    margin-top:5px;
+    width: 100%;
+}
+.name{
+    padding-right:12.625rem ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-top:2rem; 
+}
+
+#submit1{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top:2rem;
+}
+#submit2{
+    padding: 0 3rem;
+    background-color: black;
+    color:white;
+}
+#output{
+  display:none;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#reset1{
+    display:none;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top:2rem;
+}
+#reset2{
+    background-color: black;
+    padding: 0 42px;
+    color:white;
+    width:100%;
+}
+#loader{
+  display:none;
+}
+.lds-ring {
+    display:inline-block;
+    /* position: absolute; */
+    width: 80px;
+    height: 80px;
+    /* left: 751px; */
+    /* top: 204px; */
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(10, 10, 10) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+ @media screen and (max-width:1000px)
+  {
+#form{
+    /* position:static; */
+      width:80%;
+      top:25%;
+    }
+ }
+
+  
